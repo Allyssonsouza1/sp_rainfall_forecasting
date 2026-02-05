@@ -1,0 +1,17 @@
+Python implementation: CPython
+Python version       : 3.12.12
+IPython version      : 7.34.0
+
+pandas    : 2.2.2
+numpy     : 2.0.2
+sklearn   : 1.6.1
+matplotlib: 3.10.0
+seaborn   : 0.13.2
+
+Compiler    : GCC 11.4.0
+OS          : Linux
+Release     : 6.6.105+
+Machine     : x86_64
+Processor   : x86_64
+CPU cores   : 2
+Architecture: 64bit
