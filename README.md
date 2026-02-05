@@ -43,13 +43,13 @@ O projeto seguiu um pipeline rigoroso de análise de séries temporais:
 
 O modelo *SARIMA* provou ser superior, especialmente na previsão de picos de chuva (eventos extremos), onde modelos simples falharam.
 
-| Modelo | RMSE (Erro Médio) | Análise |
-| :--- | :--- | :--- |
-| *SARIMA* | *59.63* | Único capaz de capturar a sazonalidade e picos de janeiro. |
-| *ARMA* | 76.61 | Bom desempenho geral, mas conservador nos picos. |
-| *ARIMA* | 106.90 | Perda de performance devido à diferenciação excessiva. |
-| *AR* | 111.12 | Instável para meses de alta volatilidade. |
-
+| Modelo | RMSE (Erro Médio) | AIC (Critério de Qualidade) | Análise |
+| :--- | :--- | :--- | :--- |
+| *SARIMA* | *59.63* | *1270.16* | Único capaz de capturar a sazonalidade e picos de janeiro. |
+| *ARMA* | 76.61 | 1280.46 | Bom desempenho geral, mas conservador nos picos. |
+| *ARIMA* | 106.90 | 1325.99 | Perda de performance devido à diferenciação excessiva. |
+| *AR* | 111.12 | 1337.92 | Instável para meses de alta volatilidade. |
+| *MA* | 132.44 | 1411.70 | Pior desempenho; média móvel simples é insuficiente para este clima. |
 
 ## 📂 Estrutura do Repositório
 
